@@ -1,0 +1,496 @@
+/* ============================================================
+   Usa apenas variáveis do CSS global:
+   --vermelho, --dourado, --ambar, --borgonha, --bege-claro,
+   --terroso, --cinza, --branco, --text, --font-heading, --font-body
+   ============================================================ */
+
+/* ---------- Página e hero ---------- */
+
+.page {
+  background-color: var(--bege-claro);
+  font-family: var(--font-body);
+}
+
+.hero {
+  background-color: var(--vermelho);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  color: var(--branco);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--dourado);
+  margin: 1rem auto;
+}
+
+.heroSubtitle {
+  color: #f5d5c0;
+  font-size: 1rem;
+  margin-inline: auto;
+  max-width: 650px;
+}
+
+/* ---------- Seção 1: introdução e benefícios ---------- */
+
+.section {
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 896px;
+}
+
+.container2 {
+  margin-inline: auto;
+  max-width: 672px;
+}
+
+.associeSeStyle {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.body {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.body2 {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+.grid {
+  margin-bottom: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  border: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.row {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.associeSeStyle2 {
+  background-color: color-mix(in srgb, var(--ambar) 30%, transparent);
+  border-radius: 9999px;
+  padding: 0.75rem;
+}
+
+.body3 {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ---------- Seção 2: como se associar ---------- */
+
+.section2 {
+  background-color: var(--terroso);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.heading2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card2 {
+  border: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.heading3 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Lista de passos: espaçamento de 1rem entre os itens */
+.associeSeStyle3 {
+  display: grid;
+  gap: 1rem;
+}
+
+.row2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+/* Círculo numerado */
+.row3 {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.body4 {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.associeSeStyle4 {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    opacity: 0.9;
+  }
+}
+
+.card3 {
+  border: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.row4 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.heading4 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.5rem;
+}
+
+.body5 {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.associeSeStyle5 {
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ---------- Seção 3: ficha de inscrição ---------- */
+
+.heading5 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card4 {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.body6 {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Lista numerada (o global tem "li { list-style: none }", por isso o override no li) */
+.body7 {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+.body7 li {
+  list-style: decimal;
+}
+
+.associeSeStyle6 {
+  margin-bottom: 0.5rem;
+}
+
+.associeSeStyle7 {
+  margin-top: 1rem;
+}
+
+.button2 {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button2:hover {
+    opacity: 0.9;
+  }
+}
+
+/* ---------- Seção 4: formulário ---------- */
+
+.card5 {
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.icon {
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.body8 {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 0.75rem;
+}
+
+.form {
+  display: grid;
+  gap: 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid color-mix(in srgb, var(--vermelho) 25%, transparent);
+  border-radius: 12px;
+  padding-inline: 1rem;
+  padding-block: 0.625rem;
+  outline: none;
+  background-color: var(--branco);
+  color: var(--text);
+}
+
+.input {
+  transition: all 0.15s ease;
+}
+
+.textarea {
+  resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--vermelho);
+}
+
+/* Upload de arquivo */
+.associeSeStyle8 {
+  position: relative;
+}
+
+.input2 {
+  display: none;
+}
+
+.label {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px dashed color-mix(in srgb, var(--vermelho) 25%, transparent);
+  border-radius: 12px;
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  transition: all 0.15s ease;
+}
+
+.body9 {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.text {
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.button3 {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 9999px;
+  padding-block: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button3:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+  }
+}
+
+.button3:active {
+  transform: scale(0.95);
+}
+
+.text2 {
+  color: #999;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* ============================================================
+   Classes de ajuste fino
+   Ficam no fim do arquivo de propósito: precisam vencer as
+   classes acima quando usadas no mesmo elemento.
+   ============================================================ */
+
+.sectionHeading {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2.2rem;
+}
+
+.infoCardTitle {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stepCircle {
+  background-color: var(--dourado);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.amountBox {
+  background-color: color-mix(in srgb, var(--dourado) 20%, transparent);
+}
+
+.amountLabel {
+  color: var(--borgonha);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.amountValue {
+  font-family: var(--font-heading);
+  color: var(--vermelho);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.amountNote {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.formLabel {
+  font-size: 0.875rem;
+  color: var(--borgonha);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formInput {
+  border-color: color-mix(in srgb, var(--vermelho) 25%, transparent);
+  font-size: 0.9rem;
+}
+
+.fileUpload {
+  border-color: color-mix(in srgb, var(--vermelho) 25%, transparent);
+  background-color: #fafafa;
+}
+
+.successTitle {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.5rem;
+}

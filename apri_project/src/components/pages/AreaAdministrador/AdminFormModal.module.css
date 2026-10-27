@@ -1,0 +1,193 @@
+/* ============================================================
+   Usa apenas variáveis do CSS global:
+   --vermelho, --dourado, --branco, --text
+   ============================================================ */
+
+/* ---------- Overlay e caixa do modal ---------- */
+
+.row {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 0.5);
+  padding: 1rem;
+}
+
+.card {
+  max-height: 90vh;
+  width: 100%;
+  max-width: 48rem;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background-color: var(--branco);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/* Cabeçalho fixo no topo do modal */
+.row2 {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  background-color: var(--branco);
+  padding: 1.5rem;
+}
+
+/* Botão de fechar (X) */
+.button {
+  border: none;
+  border-radius: 9999px;
+  background-color: transparent;
+  padding: 0.5rem;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+/* ---------- Formulário ---------- */
+
+/* Espaçamento de 1.5rem entre os campos */
+.form {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Base comum dos campos */
+.input2,
+.textarea,
+.select {
+  width: 100%;
+  border: 1px solid #e0d8cc;
+  border-radius: 12px;
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  outline: none;
+  background-color: var(--branco);
+  color: var(--text);
+}
+
+.input2,
+.textarea {
+  transition: all 0.15s ease;
+}
+
+.textarea {
+  resize: none;
+}
+
+.input2:focus,
+.textarea:focus,
+.select:focus {
+  border-color: var(--vermelho);
+}
+
+/* ---------- Upload de imagem ---------- */
+
+.adminFormModalStyle {
+  cursor: pointer;
+  border: 2px dashed color-mix(in srgb, var(--vermelho) 25%, transparent);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.adminFormModalStyle2 {
+  position: relative;
+}
+
+.image {
+  margin-inline: auto;
+  max-height: 12rem;
+  border-radius: 8px;
+}
+
+/* Botão de remover imagem */
+.button2 {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  padding: 0.25rem;
+  color: var(--branco);
+}
+
+@media (hover: hover) {
+  .button2:hover {
+    background-color: #dc2626;
+  }
+}
+
+.icon {
+  margin-inline: auto;
+  margin-bottom: 0.75rem;
+}
+
+/* Input de arquivo escondido */
+.input {
+  display: none;
+}
+
+/* ---------- Botões de ação ---------- */
+
+.row3 {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+/* Botão com borda (Cancelar) */
+.button3 {
+  flex: 1;
+  border: 2px solid currentColor;
+  border-radius: 9999px;
+  background-color: transparent;
+  padding-block: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+/* Botão preenchido (Salvar) */
+.button4 {
+  flex: 1;
+  border: none;
+  border-radius: 9999px;
+  padding-block: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button3:hover,
+  .button4:hover {
+    opacity: 0.9;
+  }
+}

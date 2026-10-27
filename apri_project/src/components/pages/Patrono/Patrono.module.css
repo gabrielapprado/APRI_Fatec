@@ -1,0 +1,368 @@
+/* ============================================================
+   Usa apenas variáveis do CSS global:
+   --vermelho, --dourado, --ambar, --borgonha, --bege-claro,
+   --terroso, --cinza, --branco, --text, --font-heading, --font-body
+   ============================================================ */
+
+/* ---------- Textos soltos ---------- */
+
+.ctaHeading {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.participationHeading {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.formLabel {
+  font-size: 0.875rem;
+  color: var(--borgonha);
+  font-weight: 600;
+}
+
+.formInput {
+  border-color: color-mix(in srgb, var(--vermelho) 25%, transparent);
+  font-size: 0.9rem;
+}
+
+.successTitle {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.5rem;
+}
+
+.privacyNote {
+  color: #999;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+/* ---------- Página e hero ---------- */
+
+.page {
+  background-color: var(--bege-claro);
+  font-family: var(--font-body);
+}
+
+.hero {
+  background-color: var(--vermelho);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  color: var(--branco);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--dourado);
+  margin: 1rem auto;
+}
+
+.heroSubtitle {
+  color: #f5d5c0;
+  font-size: 1rem;
+  margin-inline: auto;
+  max-width: 620px;
+}
+
+/* ---------- Seção 1: o que é ser patrono ---------- */
+
+.section {
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 896px;
+}
+
+.patronoStyle {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2rem;
+}
+
+.body {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-inline: auto;
+  max-width: 700px;
+}
+
+.grid {
+  margin-bottom: 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.card {
+  border: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.row {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.patronoStyle2 {
+  background-color: color-mix(in srgb, var(--ambar) 30%, transparent);
+  border-radius: 9999px;
+  padding: 0.75rem;
+}
+
+.heading2 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.body2 {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ---------- Seção 2: por que participar ---------- */
+
+.section2 {
+  background-color: var(--terroso);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.patronoStyle3 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.grid2 {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.row2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.body3 {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ---------- Seção 3: chamada (CTA) ---------- */
+
+.section3 {
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.container2 {
+  margin-inline: auto;
+  max-width: 672px;
+}
+
+.card2 {
+  border: 3px solid var(--dourado);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.body4 {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 700;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+/* ---------- Seção 4: formulário ---------- */
+
+.section4 {
+  background-color: var(--cinza);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.heading3 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card3 {
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.icon2 {
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.body5 {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 0.75rem;
+}
+
+.form {
+  display: grid;
+  gap: 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.grid3 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Inputs: mesma base para os três tipos de campo */
+.input,
+.input2,
+.textarea {
+  margin-top: 0.25rem;
+  width: 100%;
+  border: 1px solid color-mix(in srgb, var(--vermelho) 25%, transparent);
+  border-radius: 12px;
+  padding-inline: 1rem;
+  padding-block: 0.625rem;
+  outline: none;
+  background-color: var(--branco);
+  color: var(--text);
+}
+
+.input {
+  transition: all 0.15s ease;
+}
+
+.textarea {
+  resize: none;
+}
+
+.input:focus,
+.input2:focus,
+.textarea:focus {
+  border-color: var(--vermelho);
+}
+
+.button2 {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 9999px;
+  padding-block: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button2:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+  }
+}
+
+.button2:active {
+  transform: scale(0.95);
+}

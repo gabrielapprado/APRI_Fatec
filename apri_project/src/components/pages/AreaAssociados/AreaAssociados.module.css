@@ -1,0 +1,429 @@
+/* ============================================================
+   Usa apenas variáveis do CSS global:
+   --vermelho, --dourado, --ambar, --borgonha, --bege-claro,
+   --terroso, --branco, --text, --font-heading, --font-body
+   ============================================================ */
+
+/* ---------- Página e hero ---------- */
+
+.page {
+  background-color: var(--bege-claro);
+  font-family: var(--font-body);
+}
+
+.hero {
+  background-color: var(--vermelho);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.container2 {
+  margin-inline: auto;
+  max-width: 64rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  color: var(--branco);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--dourado);
+  margin: 1rem 0;
+}
+
+.heroSubtitle {
+  color: #f5d5c0;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    opacity: 0.9;
+  }
+}
+
+/* ---------- Seção 1: cards de resumo ---------- */
+
+.section {
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  margin-bottom: 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.card {
+  border: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.row2 {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading2 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* ---------- Seção 2: lista de documentos ---------- */
+
+.section2 {
+  background-color: var(--terroso);
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.grid2 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card2 {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 12px;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.row3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.row4 {
+  flex: 1;
+}
+
+.heading3 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.body2 {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.button2 {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button2:hover {
+    opacity: 0.9;
+  }
+}
+
+.label {
+  background-color: color-mix(in srgb, var(--ambar) 30%, transparent);
+  color: var(--vermelho);
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 9999px;
+  padding-inline: 0.625rem;
+  padding-block: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-weight: 700;
+}
+
+/* ---------- Seção 3: busca e filtros ---------- */
+
+.card3 {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  background-color: var(--branco);
+  padding: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.areaAssociadoStyle {
+  max-width: 28rem;
+}
+
+.label2 {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #e0d8cc;
+  border-radius: 8px;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: var(--branco);
+  color: var(--text);
+}
+
+.input:focus {
+  border-color: var(--vermelho);
+}
+
+/* ---------- Seção 4: membros ---------- */
+
+.grid3 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card4 {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 12px;
+  background-color: var(--branco);
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.row5 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.row6 {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.row7 {
+  min-width: 0;
+  flex: 1;
+}
+
+.heading4 {
+  color: var(--borgonha);
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.text {
+  overflow: hidden;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+
+/* ---------- Seção 5: dados do associado ---------- */
+
+.heading5 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Espaçamento de 1.5rem entre os cards */
+.areaAssociadoStyle2 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card5 {
+  border: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.heading6 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid4 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.areaAssociadoStyle3 {
+  background-color: var(--terroso);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.text2 {
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.text3 {
+  color: var(--borgonha);
+  font-weight: 600;
+}
+
+/* Espaçamento de 0.75rem entre as linhas de pagamento */
+.areaAssociadoStyle4 {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.row8 {
+  background-color: var(--terroso);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.label3 {
+  color: #666;
+}
+
+.row9 {
+  background-color: color-mix(in srgb, var(--dourado) 30%, transparent);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.label4 {
+  color: var(--vermelho);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ============================================================
+   Ajuste fino: fica no fim para vencer as classes acima
+   quando usada no mesmo elemento.
+   ============================================================ */
+
+.avatarCircle {
+  width: 50px;
+  height: 50px;
+  background-color: color-mix(in srgb, var(--ambar) 25%, transparent);
+  color: var(--vermelho);
+  font-weight: 700;
+  font-size: 1rem;
+}

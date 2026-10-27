@@ -1,0 +1,633 @@
+
+
+.page {
+  background-color: var(--bege-claro);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+.hero {
+  background-color: var(--vermelho);
+  padding-inline: 1.5rem;
+  padding-block: 3rem;
+   box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  color: var(--branco);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--dourado);
+  margin: 1rem 0;
+}
+
+.heroSubtitle {
+  color: #f5d5c0;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: var(--dourado);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    opacity: 0.9;
+  }
+}
+
+
+
+.painelAdminStyle {
+  background-color: var(--terroso);
+  position: sticky;
+  top: 4rem; /* altura da sua navbar */
+  z-index: 40;
+}
+
+.container2 {
+  margin-inline: auto;
+  display: flex;
+  max-width: 80rem;
+  gap: 1rem;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+}
+
+.button2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+/* ---------- Seções e cards ---------- */
+
+.section {
+  padding-inline: 1.5rem;
+  padding-block: 3rem;
+}
+
+.row2 {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 2rem;
+}
+
+.card {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Espaçamento de 1rem entre os filhos */
+.painelAdminStyle2 {
+  display: grid;
+  gap: 1rem;
+}
+
+.row3 {
+  background-color: var(--terroso);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.row4 {
+  flex: 1;
+}
+
+.heading2 {
+  color: var(--borgonha);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.row5 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.body {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.label {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.row6 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Botões de ícone (editar / excluir) */
+.button3 {
+  border: none;
+  border-radius: 9999px;
+  padding: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button3:hover {
+    opacity: 0.7;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.heading3 {
+  margin-bottom: 1rem;
+}
+
+.heading4 {
+  color: var(--borgonha);
+  font-weight: 600;
+}
+
+.painelAdminStyle3 {
+  background-color: var(--terroso);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.row7 {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row8 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.body2 {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Espaçamento de 2.5rem entre os blocos */
+.painelAdminStyle4 {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.row9 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button4:hover {
+    opacity: 0.9;
+  }
+}
+
+.button5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding-inline: 1rem;
+  padding-block: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+  .button5:hover {
+    opacity: 0.7;
+  }
+}
+
+/* ---------- Formulários ---------- */
+
+.grid2 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.text {
+  margin-bottom: 0.375rem;
+}
+
+.text2 {
+  margin-bottom: 0.25rem;
+}
+
+.grid3 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.grid4 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.grid5 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.label2 {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Base comum de todos os campos */
+.input,
+.input2,
+.input3,
+.input4,
+.select {
+  width: 100%;
+  border: 1px solid #e0d8cc;
+  border-radius: 8px;
+  background-color: var(--branco);
+  color: var(--text);
+  outline: none;
+}
+
+.input:focus,
+.input2:focus,
+.input3:focus,
+.input4:focus,
+.select:focus {
+  border-color: var(--vermelho);
+}
+
+.input {
+  color: var(--borgonha);
+  padding-inline: 0.75rem;
+  padding-block: 0.375rem;
+  font-weight: 700;
+}
+
+.input2 {
+  color: var(--borgonha);
+  padding-inline: 0.75rem;
+  padding-block: 0.375rem;
+  font-weight: 600;
+}
+
+.input3 {
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+}
+
+.input4 {
+  margin-top: 0.25rem;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+}
+
+.select {
+  cursor: pointer;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+}
+
+.card2 {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background-color: var(--branco);
+  padding: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+/* ---------- Lista de associados (expansível) ---------- */
+
+.card3 {
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  display: grid;
+  gap: 0.75rem;
+  border-radius: 1rem;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.row10 {
+  background-color: var(--terroso);
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.row11 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.label3 {
+  border-radius: 9999px;
+  padding-inline: 0.625rem;
+  padding-block: 0.125rem;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-weight: 600;
+}
+
+.body3 {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 0.125rem;
+}
+
+.row12 {
+  margin-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Painel expandido: espaçamento de 1.5rem entre os blocos */
+.painelAdminStyle5 {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 1.5rem;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.painelAdminStyle6 {
+  border-bottom: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  padding-bottom: 1rem;
+}
+
+.heading5 {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.body4 {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.heading6 {
+  color: var(--borgonha);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .painelAdminStyle7 {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.row13 {
+  display: flex;
+  gap: 0.75rem;
+  border-top: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+  padding-top: 1rem;
+}
+
+/* ============================================================
+   Ajuste fino: ficam no fim para vencer as classes acima
+   quando usadas no mesmo elemento.
+   ============================================================ */
+
+/* Barra de abas */
+.stickyTabBar {
+  border-bottom: 2px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+}
+
+.tabActive {
+  background-color: var(--dourado);
+  color: var(--text);
+  border: 2px solid var(--dourado);
+  cursor: pointer;
+}
+
+.tabInactive {
+  background-color: var(--branco);
+  color: var(--borgonha);
+  border: 2px solid #e0d8cc;
+  cursor: pointer;
+}
+
+/* Status de conteúdos e cursos */
+.statusPublicado {
+  font-size: 0.8rem;
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.statusRascunho {
+  font-size: 0.8rem;
+  color: #ff9800;
+  font-weight: 600;
+}
+
+/* Botões de ação */
+.btnEdit {
+  background-color: color-mix(in srgb, var(--ambar) 19%, transparent);
+  cursor: pointer;
+}
+
+.btnDelete {
+  background-color: #ffebee;
+  cursor: pointer;
+}
+
+.btnEditInfo {
+  background-color: color-mix(in srgb, var(--ambar) 19%, transparent);
+  color: var(--vermelho);
+  cursor: pointer;
+}
+
+.btnCancel {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+/* Status do associado */
+.statusAtivo {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.statusPendente {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.statusInativo {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Painel de detalhes */
+.detailPanel {
+  background-color: var(--branco);
+  border: 1px solid color-mix(in srgb, var(--dourado) 25%, transparent);
+}
+
+.detailBorder {
+  border-color: color-mix(in srgb, var(--dourado) 25%, transparent);
+}
+
+/* Labels de formulário */
+.labelXs {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 600;
+  display: block;
+}
+
+.labelSm {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: 600;
+  display: block;
+}
+
+.fieldInput {
+  border-color: #e0d8cc;
+  font-size: 0.9rem;
+}
+
+/* Textos de destaque */
+.statValue {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--borgonha);
+  font-weight: 700;
+}
+
+.subheadingMd {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.4rem;
+}
+
+.subheadingSm {
+  font-family: var(--font-heading);
+  color: var(--borgonha);
+  font-size: 1.3rem;
+}
